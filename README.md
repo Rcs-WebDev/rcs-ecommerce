@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Go + gRPC + ReactJS E-Commerce (dengan Integrasi Midtrans Snap Sandbox)
 
 Proyek ini adalah implementasi lengkap aplikasi e-commerce full-stack dengan arsitektur microservices berbasis **Go (Golang) dan gRPC** untuk backend, serta **ReactJS** untuk frontend. Pembayaran disimulasikan secara langsung dengan mengintegrasikan **Midtrans Snap Sandbox API**.
@@ -69,6 +68,4 @@ Sebelum menjalankan aplikasi, pastikan Anda telah memiliki komponen berikut teri
 7. Salin nomor Virtual Account yang muncul untuk melakukan pembayaran simulasi.
 8. Buka halaman simulator Midtrans ([Midtrans Sandbox Simulator](https://docs.midtrans.com/en/technical-reference/sandbox-test-credentials)) untuk menyimulasikan transfer Virtual Account/QRIS agar status transaksi berubah menjadi **Paid** (Lunas).
 9. Setelah disimulasikan lunas, status pesanan Anda di backend akan otomatis terupdate via webhook notification (`POST /api/payment/notification`) dan stok produk akan dikelola dengan konsisten.
-=======
-# rcs-ecommerce
->>>>>>> e13d0cbae787ebc03ecd48d21cf4897746e84100
+
