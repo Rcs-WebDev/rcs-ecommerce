@@ -1,0 +1,248 @@
+.later-container {
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: var(--bg-main);
+  color: var(--text-main);
+  padding-bottom: 80px;
+}
+
+.later-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: linear-gradient(135deg, #e63946 0%, #ee4d2d 100%);
+  color: white;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.later-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.later-title-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.badge-classic {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+/* Credit Available Hero Card */
+.later-hero-section {
+  background: linear-gradient(180deg, #ee4d2d 0%, var(--bg-main) 100%);
+  padding: 16px 16px 24px;
+}
+
+.credit-hero-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.credit-hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.credit-label {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.credit-amount {
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  margin: 2px 0;
+}
+
+.scan-qr-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.limit-xtra-box {
+  background: rgba(255, 255, 255, 0.95);
+  color: #ee4d2d;
+  border-radius: 12px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Bill Status Card matching Image 4 */
+.later-bill-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  padding: 20px;
+  margin: -12px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.bill-status-text {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.bill-amount-zero {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--text-main);
+}
+
+.bill-due-date {
+  font-size: 0.78rem;
+  color: var(--text-subtle);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.bill-actions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.btn-bill-action {
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.btn-bill-action:hover {
+  border-color: #ee4d2d;
+  color: #ee4d2d;
+}
+
+/* Features Icons Grid matching Image 4 */
+.later-grid-icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px 10px;
+  padding: 20px 16px;
+  background: var(--card-bg);
+  margin: 0 16px 16px;
+  border-radius: 18px;
+  border: 1px solid var(--card-border);
+  text-align: center;
+}
+
+.later-icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.later-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: rgba(238, 77, 45, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ee4d2d;
+}
+
+.later-icon-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-main);
+  line-height: 1.15;
+}
+
+/* SPinjam Promotion Card */
+.later-spinjam-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 16px;
+  margin: 0 16px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.spinjam-tag {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Mission RPayLater Banner Card */
+.later-mission-banner {
+  background: linear-gradient(135deg, #ff512f 0%, #dd2476 100%);
+  border-radius: 18px;
+  padding: 20px;
+  margin: 0 16px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 6px 20px rgba(221, 36, 118, 0.3);
+}
+
+.mission-title {
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.mission-sub {
+  font-size: 0.78rem;
+  opacity: 0.9;
+  margin-top: 2px;
+}
