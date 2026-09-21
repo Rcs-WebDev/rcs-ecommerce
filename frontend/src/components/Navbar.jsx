@@ -3,7 +3,7 @@ import { AuthContext } from '../context/AuthContext';
 import { CartContext } from '../context/CartContext';
 import { LanguageContext } from '../context/LanguageContext';
 import { ThemeContext } from '../context/ThemeContext';
-import { ShoppingBag, LogOut, User, Store, Search, Bell, Globe, Sun, Moon, CheckCircle, Package, Tag, X, Camera, MessageSquare } from 'lucide-react';
+import { ShoppingBag, LogOut, User, ShoppingCart, Search, Bell, Globe, Sun, Moon, CheckCircle, Package, Tag, X, Camera, MessageSquare } from 'lucide-react';
 import '../styles/Navbar.css';
 
 export default function Navbar({ currentPage, setCurrentPage, searchQuery = '', setSearchQuery, onOpenChat }) {
@@ -144,9 +144,14 @@ export default function Navbar({ currentPage, setCurrentPage, searchQuery = '', 
       {/* Main Navbar Bar */}
       <nav className="navbar-main glass-panel">
         {/* Brand Logo - Hidden on mobile view */}
-        <div onClick={() => setCurrentPage('home')} className="navbar-brand">
-          <Store size={28} color="var(--primary)" style={{ flexShrink: 0 }} />
-          <span>RCSMART</span>
+        <div onClick={() => setCurrentPage('home')} className="navbar-brand" id="navbar-logo">
+          {/* Logo badge — cart icon in blue box */}
+          <div className="navbar-logo-badge">
+            <ShoppingCart size={18} color="#ffffff" strokeWidth={2.5} />
+          </div>
+          {/* Brand text */}
+          <span className="navbar-logo-rc">RC</span>
+          <span className="navbar-logo-smart">SMART</span>
         </div>
 
         {/* Central Search Bar */}

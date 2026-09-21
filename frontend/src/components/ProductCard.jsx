@@ -69,11 +69,14 @@ export default function ProductCard({ product, onSelectProduct }) {
           padding: '4px 10px',
           borderRadius: '20px',
           fontSize: '0.75rem',
-          fontWeight: 600,
-          background: isOutOfStock ? '#ef4444' : 'rgba(149, 221, 16, 0.9)',
-          border: `1px solid ${isOutOfStock ? '#ef4444' : '#10b981'}`,
-          color: isOutOfStock ? '#ffffff' : '#f6fdfaff',
-          backdropFilter: 'blur(30px)'
+          fontWeight: 700,
+          background: isOutOfStock
+            ? 'rgba(239, 68, 68, 0.9)'
+            : 'rgba(29, 78, 216, 0.85)',
+          border: `1px solid ${isOutOfStock ? '#ef4444' : '#1d4ed8'}`,
+          color: '#ffffff',
+          backdropFilter: 'blur(30px)',
+          letterSpacing: '0.3px'
         }}>
           {isOutOfStock ? 'Out of Stock' : `Stock: ${product.stock ?? 50}`}
         </span>
@@ -118,10 +121,11 @@ export default function ProductCard({ product, onSelectProduct }) {
         }}>
           <span style={{
             fontSize: '1.25rem',
-            fontWeight: 700,
-            background: 'linear-gradient(135deg, #a78bfa 0%, #f472b6 100%)',
+            fontWeight: 800,
+            background: 'linear-gradient(90deg, #60a5fa 0%, #f59e0b 100%)',
             WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent'
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text'
           }}>
             {formatRupiah(product.price)}
           </span>
